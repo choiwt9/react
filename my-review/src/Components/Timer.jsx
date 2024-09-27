@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react';
 import '../App.css';
-
-function MyReview( ){
+ 
+let timer;
+const Timer = ( ) => {
 
    const [day, setDay] = useState(new Date());
 
    useEffect(()=>{
            //1초마다 시간에 대한 정보를 업데이트
-           setInterval(()=>{
+           timer = setInterval(()=>{
             setDay(new Date());
            }, 1000);
-   }, []);
+   return()=>{
+      clearInterval(timer);
+   }
+});
 
    const formatDate = day.toLocaleDateString('ko-KR',{
       year: '2-digit',
@@ -39,4 +43,4 @@ function MyReview( ){
    );
 }
 
-export default MyReview;
+export default Timer;
