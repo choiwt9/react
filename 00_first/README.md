@@ -4,7 +4,7 @@
 >npx create-react-app 00_first
 ### npx 명령어 실행 시 오류 발생 -> 안내 메시지 확인
 ### 메시지 내용 확인이 어려울 경우... 아래 명령어 실행
->nmp -g i create-react-app 
+>npm -g i create-react-app 
 
 # 프로젝트 실행
 >cd 프로잭트명
