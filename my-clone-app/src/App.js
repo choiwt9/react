@@ -5,6 +5,7 @@ import './App.css';
 import './css/fonts.css';
 import {FooterText, Header, Logo, Main, MainContainer} from './components/styledComponents'
 import Menubar from './components/menubar'
+import MainPage from './page/MainPage';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
    <Main>
        {/* 메인 컨텐츠 영역 */}
        <Routes>
-              <Route  path="/" element={<p>메인 화면</p>}/>
+              <Route  path="/" element={<MainPage/>}/>
             </Routes>
    </Main>
 
